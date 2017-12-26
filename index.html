@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sp.css">
   </head>
   <body>
     <div class="wrapper">
@@ -15,8 +16,9 @@
         <div class="header-top">
           <div class="inner">
             <span class="keyword">岡山市｜一級建築士｜注文住宅・店舗・医療施設の設計・直営工事会社</span>
-            <a href="" class="header-info">資料請求</a>
-            <a href="" class="header-info">お問い合わせ</a>
+            <a href="" class="header-info on-pc">資料請求</a>
+            <a href="" class="header-info on-pc">お問い合わせ</a>
+            <button  id="open-btn" class="menu-btn on-sp"><i class="fa fa-bars"></i>メニュー</button>
           </div>
         </div>
         <div class="header-main">
@@ -27,7 +29,7 @@
               </a>
               <span class="logo-copy">一期一会の、特別な家。</span>
             </h1>
-            <nav class="nav">
+            <nav class="nav on-pc">
               <ul class="cf">
                 <li>
                   <a href="">
@@ -74,6 +76,24 @@
             </nav>
           </div>
         </div>
+        <div id="sp-nav" class="sp-nav on-sp">
+          <div class="sp-nav-header">
+            <button  id="close-btn" class="nav-btn-close"><i class="fa fa-close"></i>close</button>
+          </div>
+          <ul class="cf">
+            <li><a href=""><img src="http://www.ichiekensho.co.jp/wp/wp-content/themes/ichie/img/common/logo_sp.svg" alt=""><span>HOME</span></a></li>
+            <li><a href=""><img src="./img/nav_gallery.svg" alt="" ><span>ギャラリー</span></a></li>
+            <li><a href=""><img src="./img/nav_company.svg" alt="" ><span>イチエの家</span></a></li>
+            <li><a href=""><img src="./img/nav_blog.svg" alt="" ><span>建築ブログ</span></a></li>
+            <li><a href=""><img src="./img/nav_event.svg" alt="" ><span>イベント情報</span></a></li>
+            <li><a href=""><img src="./img/nav_faq.svg" alt="" ><span>Q&amp;A</span></a></li>
+            <li><a href=""><img src="./img/nav_company.svg" alt="" ><span>会社案内</span></a></li>
+            <li><a href=""><span>資料請求</span></a></li>
+            <li><a href=""><span>お問い合わせ</span></a></li>
+            <li><a href=""><img src="./img/nav_ichie.svg" alt="" ></a></li>
+          </ul>
+        </div>
+
       </header>
       <div class="main">
         <div class="main-inner inner">
@@ -160,5 +180,7 @@
         </p>
       </footer>
     </div>
+    <script src="script.js"></script>
+    <!-- DOM要素を全て読み込む為、<script></script>は一番下に記述する。 -->
   </body>
 </html>

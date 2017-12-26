@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+/* pcとspのhtmlの切り替えを管理するためのクラス */
+.on-pc{
+  display: block;
+}
+
+.header-info.on-pc{
+  display: inline-block;
+}
+
+.on-sp{
+  display: none;
+}
+
+@media screen and (max-width: 375px){
+  .on-pc{
+    display: none;
+  }
+
+  .header-info.on-pc{
+    display: none;
+  }
+
+  .on-sp{
+    display: block;
+  }
+
+  .inner{
+    width: 100%;
+    padding: 5px;
+  }
+
+  .section-header{
+    width: 100%;
+  }
+
+  .box-middle{
+    margin: 0;
+  }
+
+  .header-top{
+    padding: 3px 0 5px;
+  }
+
+  .header-top .inner{
+    display: table;
+  }
+
+  .keyword{
+    display: table-cell;
+    width: 70%;
+    text-align: left;
+    padding-top: 0;
+    vertical-align: middle;
+  }
+
+  .menu-btn{
+    display: table-cell;
+    width: 100%;
+    background-color: #ff0;
+    border: none;
+    height: 30px;
+    vertical-align: middle;
+  }
+
+  .sp-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    z-index: 999;
+  }
+
+  .sp-nav.active{
+    display: block;
+  }
+
+  .sp-nav-header {
+    padding: 10px 20px;
+    text-align: right;
+  }
+
+  .nav-btn-close {
+    font-size: 16px;
+  }
+
+  .sp-nav li {
+    float: left;
+    width: 30.33333%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .sp-nav li:first-child {
+    float: none;
+    width: 100%;
+  }
+
+  .sp-nav li:first-child a {
+    width: 50%;
+  }
+
+  .sp-nav li:nth-child(8) a,
+  .sp-nav li:nth-child(9) a {
+    background: #ff0;
+    padding: 8px 10px;
+    border-radius: 3px;
+  }
+
+  .sp-nav li:last-child a {
+    width: 65%;
+  }
+
+  .sp-nav li a {
+    display: inline-block;
+  }
+
+  .sp-nav li img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+}
